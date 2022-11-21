@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document.getElementByTagName()</title>
+    <script>
+        function change() {
+            let spanArray = document.getElementByTagName("span");
+            for(let i = 0; i < spanArray.length; i++) {
+                let spanObj = spanArray[i];
+                spanObj.style.color = "orchild";
+                spanObj.style.fontSize = "20px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>내가 좋아하는 과일 
+        <button onclick="change()">누르세요</button>
+    </h3>
+    <hr>
+    너는 빨간 <span>사과</span>를 좋아해서 아침마다 하나씩 먹고 있습니다
+    운동할 때 중간중간에 <span>바나나</span>를 먹지요.
+</body>
+</html>
